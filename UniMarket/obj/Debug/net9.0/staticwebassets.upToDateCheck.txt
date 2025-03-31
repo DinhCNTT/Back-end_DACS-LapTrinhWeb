@@ -1,0 +1,51 @@
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\lib\jquery\dist\jquery.min.js
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\js\site.js
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\lib\jquery\LICENSE.txt
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\lib\jquery\dist\jquery.min.map
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\css\site.css
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\lib\jquery-validation\LICENSE.md
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\favicon.ico
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\images\categories\mail_open_open_envelope_icon_264213.ico
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\lib\jquery-validation\dist\additional-methods.js
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\lib\jquery\dist\jquery.js
+wwwroot\css\site.css
+wwwroot\favicon.ico
+wwwroot\images\categories\mail_open_open_envelope_icon_264213.ico
+wwwroot\images\categories\Screenshot (523).png
+wwwroot\images\categories\Screenshot (524).png
+wwwroot\images\categories\Screenshot 2025-03-15 224601.png
+wwwroot\images\categories\Screenshot 2025-03-15 232418.png
+wwwroot\images\categories\Screenshot 2025-03-16 100610.png
+wwwroot\images\categories\Screenshot 2025-03-16 215248.png
+wwwroot\images\categories\Screenshot 2025-03-16 232642.png
+wwwroot\images\categories\Screenshot 2025-03-17 153821.png
+wwwroot\js\site.js
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\lib\jquery\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
