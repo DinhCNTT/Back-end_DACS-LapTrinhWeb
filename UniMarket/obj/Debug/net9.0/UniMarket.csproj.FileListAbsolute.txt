@@ -1189,4 +1189,5 @@ D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\obj\Debug\net9.0\refint\U
 D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\obj\Debug\net9.0\UniMarket.pdb
 D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\obj\Debug\net9.0\UniMarket.genruntimeconfig.cache
 D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\obj\Debug\net9.0\ref\UniMarket.dll
+D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\obj\Debug\net9.0\UniMarket.sourcelink.json
 D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\obj\Debug\net9.0\compressed\vbmfk7z6b2-eev6ylr7eq.gz

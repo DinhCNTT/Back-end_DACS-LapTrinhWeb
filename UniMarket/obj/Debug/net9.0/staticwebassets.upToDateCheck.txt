@@ -22,14 +22,7 @@ D:\Web_ASP.NET\29-3-2025 - backEnd\UniMarket\UniMarket\wwwroot\lib\jquery\dist\j
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\categories\mail_open_open_envelope_icon_264213.ico
-wwwroot\images\categories\Screenshot (523).png
-wwwroot\images\categories\Screenshot (524).png
-wwwroot\images\categories\Screenshot 2025-03-15 224601.png
-wwwroot\images\categories\Screenshot 2025-03-15 232418.png
 wwwroot\images\categories\Screenshot 2025-03-16 100610.png
-wwwroot\images\categories\Screenshot 2025-03-16 215248.png
-wwwroot\images\categories\Screenshot 2025-03-16 232642.png
-wwwroot\images\categories\Screenshot 2025-03-17 153821.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
