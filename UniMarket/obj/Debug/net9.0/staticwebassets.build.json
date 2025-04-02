@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1F+/0pXzjHFjAd6jUNnJAl1T42Fpu7kMNdOe3VXwavA=",
+  "Hash": "oXuN8B0yZUKkuGZlk3MvNcBX7OxSYUnOsb9mee/TRIE=",
   "Source": "UniMarket",
   "BasePath": "_content/UniMarket",
   "Mode": "Default",
@@ -3188,6 +3188,69 @@
       "OriginalItemSpec": "wwwroot\\images\\categories\\Screenshot 2025-03-16 100610.png"
     },
     {
+      "Identity": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-16 141131.png",
+      "SourceId": "UniMarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\",
+      "BasePath": "_content/UniMarket",
+      "RelativePath": "images/categories/Screenshot 2025-03-16 141131#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kjvep2z2r9",
+      "Integrity": "0LdUK181rIfr3/fwOpkDBuLHm3EVE+FONYDBpM9YWgI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categories\\Screenshot 2025-03-16 141131.png"
+    },
+    {
+      "Identity": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-16 141318.png",
+      "SourceId": "UniMarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\",
+      "BasePath": "_content/UniMarket",
+      "RelativePath": "images/categories/Screenshot 2025-03-16 141318#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pvb7tzad85",
+      "Integrity": "Gz+DjoCOdRTWeDAXi/GIGOcXCKvDv07LBLv1xaRUmDY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categories\\Screenshot 2025-03-16 141318.png"
+    },
+    {
+      "Identity": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-17 135943.png",
+      "SourceId": "UniMarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\",
+      "BasePath": "_content/UniMarket",
+      "RelativePath": "images/categories/Screenshot 2025-03-17 135943#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0tdcdbv6oi",
+      "Integrity": "HIYc/+dnGMWKIonYetv5dx5l4S/JcsbTPMHl3vslVSo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categories\\Screenshot 2025-03-17 135943.png"
+    },
+    {
       "Identity": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-17 152758.png",
       "SourceId": "UniMarket",
       "SourceType": "Discovered",
@@ -3207,6 +3270,132 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\categories\\Screenshot 2025-03-17 152758.png"
+    },
+    {
+      "Identity": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-17 214700.png",
+      "SourceId": "UniMarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\",
+      "BasePath": "_content/UniMarket",
+      "RelativePath": "images/categories/Screenshot 2025-03-17 214700#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mpqhniwzwg",
+      "Integrity": "emDOV6PDxPoVOAdb7tyi5askn7hbHjxsHokdMMgyYyM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categories\\Screenshot 2025-03-17 214700.png"
+    },
+    {
+      "Identity": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-17 220654.png",
+      "SourceId": "UniMarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\",
+      "BasePath": "_content/UniMarket",
+      "RelativePath": "images/categories/Screenshot 2025-03-17 220654#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5pk9vi5jo8",
+      "Integrity": "9xftT059Sez4Z9DA4Ncfznb5jFke7pRQoNU8ngzNUFA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categories\\Screenshot 2025-03-17 220654.png"
+    },
+    {
+      "Identity": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-19 155841.png",
+      "SourceId": "UniMarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\",
+      "BasePath": "_content/UniMarket",
+      "RelativePath": "images/categories/Screenshot 2025-03-19 155841#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "t9r1110tfq",
+      "Integrity": "UcXZoUe0fahfYA0CiKYZsp9xNNFtQJq/Lbfrilwrgfo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categories\\Screenshot 2025-03-19 155841.png"
+    },
+    {
+      "Identity": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-19 214256.png",
+      "SourceId": "UniMarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\",
+      "BasePath": "_content/UniMarket",
+      "RelativePath": "images/categories/Screenshot 2025-03-19 214256#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1wd1a9gb8a",
+      "Integrity": "kcquYJ+wK3VflVuyjLKB67CTgLcG5AXtJIsY8THtNCs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categories\\Screenshot 2025-03-19 214256.png"
+    },
+    {
+      "Identity": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-20 091420.png",
+      "SourceId": "UniMarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\",
+      "BasePath": "_content/UniMarket",
+      "RelativePath": "images/categories/Screenshot 2025-03-20 091420#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yanviq2154",
+      "Integrity": "Rh6GvmApsWy6ar6OD4T11zmfGV/ALNyRm+SouozHSo8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categories\\Screenshot 2025-03-20 091420.png"
+    },
+    {
+      "Identity": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-21 161954.png",
+      "SourceId": "UniMarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\",
+      "BasePath": "_content/UniMarket",
+      "RelativePath": "images/categories/Screenshot 2025-03-21 161954#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3d4s6uv9e8",
+      "Integrity": "6cyBaswQSxTr/Sav1KT3vC59zdQfMnCsicUC+6SQu8E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categories\\Screenshot 2025-03-21 161954.png"
     },
     {
       "Identity": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\js\\site.js",
@@ -13273,6 +13462,252 @@
       ]
     },
     {
+      "Route": "images/categories/Screenshot 2025-03-16 141131.kjvep2z2r9.png",
+      "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-16 141131.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10321"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0LdUK181rIfr3/fwOpkDBuLHm3EVE+FONYDBpM9YWgI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 06:32:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kjvep2z2r9"
+        },
+        {
+          "Name": "label",
+          "Value": "images/categories/Screenshot 2025-03-16 141131.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0LdUK181rIfr3/fwOpkDBuLHm3EVE+FONYDBpM9YWgI="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/Screenshot 2025-03-16 141131.png",
+      "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-16 141131.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10321"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0LdUK181rIfr3/fwOpkDBuLHm3EVE+FONYDBpM9YWgI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 06:32:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0LdUK181rIfr3/fwOpkDBuLHm3EVE+FONYDBpM9YWgI="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/Screenshot 2025-03-16 141318.png",
+      "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-16 141318.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53656"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Gz+DjoCOdRTWeDAXi/GIGOcXCKvDv07LBLv1xaRUmDY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 17:17:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Gz+DjoCOdRTWeDAXi/GIGOcXCKvDv07LBLv1xaRUmDY="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/Screenshot 2025-03-16 141318.pvb7tzad85.png",
+      "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-16 141318.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53656"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Gz+DjoCOdRTWeDAXi/GIGOcXCKvDv07LBLv1xaRUmDY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 17:17:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pvb7tzad85"
+        },
+        {
+          "Name": "label",
+          "Value": "images/categories/Screenshot 2025-03-16 141318.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Gz+DjoCOdRTWeDAXi/GIGOcXCKvDv07LBLv1xaRUmDY="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/Screenshot 2025-03-17 135943.0tdcdbv6oi.png",
+      "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-17 135943.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "222326"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HIYc/+dnGMWKIonYetv5dx5l4S/JcsbTPMHl3vslVSo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 17:18:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0tdcdbv6oi"
+        },
+        {
+          "Name": "label",
+          "Value": "images/categories/Screenshot 2025-03-17 135943.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HIYc/+dnGMWKIonYetv5dx5l4S/JcsbTPMHl3vslVSo="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/Screenshot 2025-03-17 135943.png",
+      "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-17 135943.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "222326"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HIYc/+dnGMWKIonYetv5dx5l4S/JcsbTPMHl3vslVSo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 17:18:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HIYc/+dnGMWKIonYetv5dx5l4S/JcsbTPMHl3vslVSo="
+        }
+      ]
+    },
+    {
       "Route": "images/categories/Screenshot 2025-03-17 152758.png",
       "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-17 152758.png",
       "Selectors": [],
@@ -13295,7 +13730,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 16:55:38 GMT"
+          "Value": "Tue, 01 Apr 2025 17:18:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13332,7 +13767,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 16:55:38 GMT"
+          "Value": "Tue, 01 Apr 2025 17:18:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13351,6 +13786,498 @@
         {
           "Name": "integrity",
           "Value": "sha256-dXc+mfPqihTiKPos0uuW35nSnr7mf3dUr5Q4bFXmKAM="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/Screenshot 2025-03-17 214700.mpqhniwzwg.png",
+      "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-17 214700.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "123419"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"emDOV6PDxPoVOAdb7tyi5askn7hbHjxsHokdMMgyYyM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 17:17:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mpqhniwzwg"
+        },
+        {
+          "Name": "label",
+          "Value": "images/categories/Screenshot 2025-03-17 214700.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-emDOV6PDxPoVOAdb7tyi5askn7hbHjxsHokdMMgyYyM="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/Screenshot 2025-03-17 214700.png",
+      "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-17 214700.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "123419"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"emDOV6PDxPoVOAdb7tyi5askn7hbHjxsHokdMMgyYyM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 17:17:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-emDOV6PDxPoVOAdb7tyi5askn7hbHjxsHokdMMgyYyM="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/Screenshot 2025-03-17 220654.5pk9vi5jo8.png",
+      "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-17 220654.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "187284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9xftT059Sez4Z9DA4Ncfznb5jFke7pRQoNU8ngzNUFA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 17:19:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5pk9vi5jo8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/categories/Screenshot 2025-03-17 220654.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9xftT059Sez4Z9DA4Ncfznb5jFke7pRQoNU8ngzNUFA="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/Screenshot 2025-03-17 220654.png",
+      "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-17 220654.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "187284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9xftT059Sez4Z9DA4Ncfznb5jFke7pRQoNU8ngzNUFA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 17:19:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9xftT059Sez4Z9DA4Ncfznb5jFke7pRQoNU8ngzNUFA="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/Screenshot 2025-03-19 155841.png",
+      "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-19 155841.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UcXZoUe0fahfYA0CiKYZsp9xNNFtQJq/Lbfrilwrgfo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 17:19:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UcXZoUe0fahfYA0CiKYZsp9xNNFtQJq/Lbfrilwrgfo="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/Screenshot 2025-03-19 155841.t9r1110tfq.png",
+      "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-19 155841.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UcXZoUe0fahfYA0CiKYZsp9xNNFtQJq/Lbfrilwrgfo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 17:19:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t9r1110tfq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/categories/Screenshot 2025-03-19 155841.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UcXZoUe0fahfYA0CiKYZsp9xNNFtQJq/Lbfrilwrgfo="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/Screenshot 2025-03-19 214256.1wd1a9gb8a.png",
+      "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-19 214256.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "188868"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kcquYJ+wK3VflVuyjLKB67CTgLcG5AXtJIsY8THtNCs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 17:19:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1wd1a9gb8a"
+        },
+        {
+          "Name": "label",
+          "Value": "images/categories/Screenshot 2025-03-19 214256.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kcquYJ+wK3VflVuyjLKB67CTgLcG5AXtJIsY8THtNCs="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/Screenshot 2025-03-19 214256.png",
+      "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-19 214256.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "188868"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kcquYJ+wK3VflVuyjLKB67CTgLcG5AXtJIsY8THtNCs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 17:19:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kcquYJ+wK3VflVuyjLKB67CTgLcG5AXtJIsY8THtNCs="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/Screenshot 2025-03-20 091420.png",
+      "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-20 091420.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26789"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rh6GvmApsWy6ar6OD4T11zmfGV/ALNyRm+SouozHSo8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 17:19:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rh6GvmApsWy6ar6OD4T11zmfGV/ALNyRm+SouozHSo8="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/Screenshot 2025-03-20 091420.yanviq2154.png",
+      "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-20 091420.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26789"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rh6GvmApsWy6ar6OD4T11zmfGV/ALNyRm+SouozHSo8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 17:19:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yanviq2154"
+        },
+        {
+          "Name": "label",
+          "Value": "images/categories/Screenshot 2025-03-20 091420.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rh6GvmApsWy6ar6OD4T11zmfGV/ALNyRm+SouozHSo8="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/Screenshot 2025-03-21 161954.3d4s6uv9e8.png",
+      "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-21 161954.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6cyBaswQSxTr/Sav1KT3vC59zdQfMnCsicUC+6SQu8E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 06:32:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3d4s6uv9e8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/categories/Screenshot 2025-03-21 161954.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6cyBaswQSxTr/Sav1KT3vC59zdQfMnCsicUC+6SQu8E="
+        }
+      ]
+    },
+    {
+      "Route": "images/categories/Screenshot 2025-03-21 161954.png",
+      "AssetFile": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\wwwroot\\images\\categories\\Screenshot 2025-03-21 161954.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6cyBaswQSxTr/Sav1KT3vC59zdQfMnCsicUC+6SQu8E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 06:32:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6cyBaswQSxTr/Sav1KT3vC59zdQfMnCsicUC+6SQu8E="
         }
       ]
     },

@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0AAAA58D-C2DD-4BE6-BF6C-97E7279CEB0B}|UniMarket\\UniMarket.csproj|d:\\web_asp.net\\29-3-2025 - backend\\unimarket\\unimarket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AAAA58D-C2DD-4BE6-BF6C-97E7279CEB0B}|UniMarket\\UniMarket.csproj|solutionrelative:unimarket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0AAAA58D-C2DD-4BE6-BF6C-97E7279CEB0B}|UniMarket\\UniMarket.csproj|d:\\web_asp.net\\29-3-2025 - backend\\unimarket\\unimarket\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AAAA58D-C2DD-4BE6-BF6C-97E7279CEB0B}|UniMarket\\UniMarket.csproj|solutionrelative:unimarket\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AAAA58D-C2DD-4BE6-BF6C-97E7279CEB0B}|UniMarket\\UniMarket.csproj|d:\\web_asp.net\\29-3-2025 - backend\\unimarket\\unimarket\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AAAA58D-C2DD-4BE6-BF6C-97E7279CEB0B}|UniMarket\\UniMarket.csproj|solutionrelative:unimarket\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AAAA58D-C2DD-4BE6-BF6C-97E7279CEB0B}|UniMarket\\UniMarket.csproj|d:\\web_asp.net\\29-3-2025 - backend\\unimarket\\unimarket\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AAAA58D-C2DD-4BE6-BF6C-97E7279CEB0B}|UniMarket\\UniMarket.csproj|solutionrelative:unimarket\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0AAAA58D-C2DD-4BE6-BF6C-97E7279CEB0B}|UniMarket\\UniMarket.csproj|d:\\web_asp.net\\29-3-2025 - backend\\unimarket\\unimarket\\models\\danhmuccha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AAAA58D-C2DD-4BE6-BF6C-97E7279CEB0B}|UniMarket\\UniMarket.csproj|solutionrelative:unimarket\\models\\danhmuccha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AAAA58D-C2DD-4BE6-BF6C-97E7279CEB0B}|UniMarket\\UniMarket.csproj|d:\\web_asp.net\\29-3-2025 - backend\\unimarket\\unimarket\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AAAA58D-C2DD-4BE6-BF6C-97E7279CEB0B}|UniMarket\\UniMarket.csproj|solutionrelative:unimarket\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0AAAA58D-C2DD-4BE6-BF6C-97E7279CEB0B}|UniMarket\\UniMarket.csproj|d:\\web_asp.net\\29-3-2025 - backend\\unimarket\\unimarket\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0AAAA58D-C2DD-4BE6-BF6C-97E7279CEB0B}|UniMarket\\UniMarket.csproj|d:\\web_asp.net\\29-3-2025 - backend\\unimarket\\unimarket\\dataaccess\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AAAA58D-C2DD-4BE6-BF6C-97E7279CEB0B}|UniMarket\\UniMarket.csproj|solutionrelative:unimarket\\dataaccess\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AAAA58D-C2DD-4BE6-BF6C-97E7279CEB0B}|UniMarket\\UniMarket.csproj|d:\\web_asp.net\\29-3-2025 - backend\\unimarket\\unimarket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AAAA58D-C2DD-4BE6-BF6C-97E7279CEB0B}|UniMarket\\UniMarket.csproj|solutionrelative:unimarket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0AAAA58D-C2DD-4BE6-BF6C-97E7279CEB0B}|UniMarket\\UniMarket.csproj|d:\\web_asp.net\\29-3-2025 - backend\\unimarket\\unimarket\\controllers\\authcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -130,7 +134,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -143,6 +147,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "UniMarket\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "UniMarket\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwC4AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T03:58:35.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "DanhMucCha.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Models\\DanhMucCha.cs",
               "RelativeDocumentMoniker": "UniMarket\\Models\\DanhMucCha.cs",
@@ -154,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "DanhMuc.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Models\\DanhMuc.cs",
               "RelativeDocumentMoniker": "UniMarket\\Models\\DanhMuc.cs",
@@ -162,37 +178,36 @@
               "RelativeToolTip": "UniMarket\\Models\\DanhMuc.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T10:19:40.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T10:19:40.96Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AdminController.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "UniMarket\\Controllers\\AdminController.cs",
               "ToolTip": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Controllers\\AdminController.cs",
               "RelativeToolTip": "UniMarket\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAL8BAAAAAAAAAAAIwNcBAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAawBIBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:34:03.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T08:34:03.408Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Program.cs",
               "RelativeDocumentMoniker": "UniMarket\\Program.cs",
               "ToolTip": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Program.cs",
               "RelativeToolTip": "UniMarket\\Program.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAwJsAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T16:45:56.035Z"
+              "WhenOpened": "2025-03-30T16:45:56.035Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AuthController .cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Controllers\\AuthController .cs",
               "RelativeDocumentMoniker": "UniMarket\\Controllers\\AuthController .cs",
@@ -204,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "UniMarket\\Models\\ApplicationUser.cs",
@@ -216,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\DataAccess\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "UniMarket\\DataAccess\\ApplicationDbContext.cs",
@@ -228,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "TinDang.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Models\\TinDang.cs",
               "RelativeDocumentMoniker": "UniMarket\\Models\\TinDang.cs",
@@ -240,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "QuanHuyen.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Models\\QuanHuyen.cs",
               "RelativeDocumentMoniker": "UniMarket\\Models\\QuanHuyen.cs",
@@ -252,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "SD.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Models\\SD.cs",
               "RelativeDocumentMoniker": "UniMarket\\Models\\SD.cs",
@@ -264,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AnhTinDang.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Models\\AnhTinDang.cs",
               "RelativeDocumentMoniker": "UniMarket\\Models\\AnhTinDang.cs",
@@ -276,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Logout.cshtml.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
               "RelativeDocumentMoniker": "UniMarket\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
@@ -288,7 +303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "TinhThanh.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Models\\TinhThanh.cs",
               "RelativeDocumentMoniker": "UniMarket\\Models\\TinhThanh.cs",
@@ -300,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "20250330073907_TestKoChanEF.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Migrations\\20250330073907_TestKoChanEF.cs",
               "RelativeDocumentMoniker": "UniMarket\\Migrations\\20250330073907_TestKoChanEF.cs",
@@ -312,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\appsettings.json",
               "RelativeDocumentMoniker": "UniMarket\\appsettings.json",
@@ -324,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "UserLoginModel.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Models\\UserLoginModel.cs",
               "RelativeDocumentMoniker": "UniMarket\\Models\\UserLoginModel.cs",
@@ -336,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Login.cshtml.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "RelativeDocumentMoniker": "UniMarket\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
@@ -348,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "UniMarket\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
@@ -360,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "20250327082105_AddRolesToUsers.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Migrations\\20250327082105_AddRolesToUsers.cs",
               "RelativeDocumentMoniker": "UniMarket\\Migrations\\20250327082105_AddRolesToUsers.cs",
@@ -372,7 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "20250328070046_AddFullNameToUsers.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Migrations\\20250328070046_AddFullNameToUsers.cs",
               "RelativeDocumentMoniker": "UniMarket\\Migrations\\20250328070046_AddFullNameToUsers.cs",
@@ -384,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Pages\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "UniMarket\\Pages\\_ViewStart.cshtml",
@@ -396,7 +411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "UniMarket\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -408,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "UniMarket\\Pages\\Shared\\_Layout.cshtml",
@@ -420,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Pages\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "UniMarket\\Pages\\_ViewImports.cshtml",
@@ -432,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "UniMarket.http",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\UniMarket.http",
               "RelativeDocumentMoniker": "UniMarket\\UniMarket.http",
@@ -444,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\appsettings.Development.json",
               "RelativeDocumentMoniker": "UniMarket\\appsettings.Development.json",
@@ -456,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "UniMarket\\ScaffoldingReadMe.txt",
@@ -468,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ApplicationDbContextModelSnapshot.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "UniMarket\\Migrations\\ApplicationDbContextModelSnapshot.cs",
@@ -480,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "20250325083332_AddIdentity.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Migrations\\20250325083332_AddIdentity.cs",
               "RelativeDocumentMoniker": "UniMarket\\Migrations\\20250325083332_AddIdentity.cs",
@@ -492,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "20250325083246_Initial.cs",
               "DocumentMoniker": "D:\\Web_ASP.NET\\29-3-2025 - backEnd\\UniMarket\\UniMarket\\Migrations\\20250325083246_Initial.cs",
               "RelativeDocumentMoniker": "UniMarket\\Migrations\\20250325083246_Initial.cs",
