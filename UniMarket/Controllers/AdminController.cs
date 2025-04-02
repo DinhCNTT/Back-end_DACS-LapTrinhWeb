@@ -209,9 +209,9 @@ namespace UniMarket.Controllers
             }
             return Ok(employeeList);
         }
-
+        //quản lý danh mục cha
         [HttpGet("get-parent-categories")]
-        public async Task<IActionResult> GetParentCategories()
+        public async Task<IActionResult> GetParentCategories() //hàm lấy danh sách danh mục cha
         {
             var parentCategories = await _context.DanhMucChas
                 .Select(d => new
@@ -226,33 +226,7 @@ namespace UniMarket.Controllers
             return Ok(parentCategories);
         }
 
-        [HttpPost("add-category")]
-        public async Task<IActionResult> AddCategory([FromForm] string tenDanhMuc, [FromForm] int maDanhMucCha)
-        {
-            if (maDanhMucCha == 0)
-            {
-                return BadRequest("Danh mục con bắt buộc phải có danh mục cha!");
-            }
-
-            var parentCategory = await _context.DanhMucChas.FindAsync(maDanhMucCha);
-            if (parentCategory == null)
-            {
-                return BadRequest("Mã danh mục cha không hợp lệ!");
-            }
-
-            var newCategory = new DanhMuc
-            {
-                TenDanhMuc = tenDanhMuc,
-                MaDanhMucCha = maDanhMucCha
-            };
-
-            _context.DanhMucs.Add(newCategory);
-            await _context.SaveChangesAsync();
-
-            return Ok(new { message = "Thêm danh mục thành công!" });
-        }
-
-        [HttpPost("add-parent-category")]
+        [HttpPost("add-parent-category")]  //hàm thêm danh mục cha
         public async Task<IActionResult> AddParentCategory([FromForm] IFormFile anhDanhMuc, [FromForm] IFormFile icon, [FromForm] string tenDanhMucCha)
         {
             if (string.IsNullOrWhiteSpace(tenDanhMucCha))
@@ -316,34 +290,8 @@ namespace UniMarket.Controllers
 
             return Ok(subCategories);
         }
-        //quản lý danh mục con
 
-        [HttpPut("update-subcategory/{id}")]
-        public async Task<IActionResult> UpdateSubCategory(int id, [FromBody] DanhMuc updatedCategory)
-        {
-            var category = await _context.DanhMucs.FindAsync(id);
-            if (category == null) return NotFound("Danh mục không tồn tại.");
-
-            category.TenDanhMuc = updatedCategory.TenDanhMuc ?? category.TenDanhMuc;
-            category.MaDanhMucCha = updatedCategory.MaDanhMucCha;
-
-            await _context.SaveChangesAsync();
-            return Ok(new { message = "Cập nhật danh mục con thành công!" });
-        }
-
-        [HttpDelete("delete-subcategory/{id}")]
-        public async Task<IActionResult> DeleteSubCategory(int id)
-        {
-            var category = await _context.DanhMucs.FindAsync(id);
-            if (category == null) return NotFound("Danh mục không tồn tại.");
-
-            _context.DanhMucs.Remove(category);
-            await _context.SaveChangesAsync();
-
-            return Ok(new { message = "Xóa danh mục con thành công!" });
-        }
-        //quản lý danh mục cha
-        [HttpPut("update-parent-category/{id}")]
+        [HttpPut("update-parent-category/{id}")] //hàm update danh mục cha
         public async Task<IActionResult> UpdateParentCategory(int id,
      [FromForm] IFormFile? anhDanhMuc, // Thêm dấu ? để cho phép null
     [FromForm] IFormFile? icon,
@@ -428,7 +376,7 @@ namespace UniMarket.Controllers
                 }
             });
         }
-
+        //hàm xóa danh mục cha
         [HttpDelete("delete-parent-category/{id}")]
         public async Task<IActionResult> DeleteParentCategory(int id)
         {
@@ -471,8 +419,92 @@ namespace UniMarket.Controllers
 
             return Ok(new { message = "Xóa danh mục cha thành công!" });
         }
+        //quản lý danh mục con
+        //hàm lấy danh sách danh mục con
+
+        [HttpGet("get-categories")]
+        public async Task<IActionResult> GetCategories()
+        {
+            var categories = await _context.DanhMucs
+                .Select(dm => new {
+                    dm.MaDanhMuc,
+                    dm.TenDanhMuc,
+                    dm.MaDanhMucCha
+                })
+                .ToListAsync();
+
+            return Ok(categories);
+        }
 
 
+        //hàm update danh mục con
+        [HttpPut("update-category/{id}")]
+        public async Task<IActionResult> UpdateCategory(int id, [FromBody] UpdateCategoryModel model)
+        {
+            if (model == null || string.IsNullOrWhiteSpace(model.TenDanhMuc))
+            {
+                return BadRequest("Thông tin danh mục không hợp lệ.");
+            }
+
+            var danhMuc = await _context.DanhMucs.FindAsync(id);
+            if (danhMuc == null)
+            {
+                return NotFound("Danh mục không tồn tại.");
+            }
+
+            danhMuc.TenDanhMuc = model.TenDanhMuc;
+            danhMuc.MaDanhMucCha = model.DanhMucChaId;
+
+            await _context.SaveChangesAsync();
+            return Ok(new { message = "Cập nhật danh mục thành công!" });
+        }
+        //hàm thêm danh mục con
+
+        [HttpPost("add-category")]
+        public async Task<IActionResult> AddCategory([FromForm] string tenDanhMuc, [FromForm] int maDanhMucCha)
+        {
+            if (maDanhMucCha == 0)
+            {
+                return BadRequest("Danh mục con bắt buộc phải có danh mục cha!");
+            }
+
+            var parentCategory = await _context.DanhMucChas.FindAsync(maDanhMucCha);
+            if (parentCategory == null)
+            {
+                return BadRequest("Mã danh mục cha không hợp lệ!");
+            }
+
+            var newCategory = new DanhMuc
+            {
+                TenDanhMuc = tenDanhMuc,
+                MaDanhMucCha = maDanhMucCha
+            };
+
+            _context.DanhMucs.Add(newCategory);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Thêm danh mục thành công!" });
+        }
+
+        //hàm xóa danh mục con
+        [HttpDelete("delete-category/{id}")]
+        public async Task<IActionResult> DeleteCategory(int id)
+        {
+            var danhMuc = await _context.DanhMucs.FindAsync(id);
+            if (danhMuc == null)
+            {
+                return NotFound("Danh mục không tồn tại.");
+            }
+
+            _context.DanhMucs.Remove(danhMuc);
+            await _context.SaveChangesAsync();
+            return Ok(new { message = "Xóa danh mục thành công!" });
+        }
+        public class UpdateCategoryModel
+        {
+            public string TenDanhMuc { get; set; }
+            public int DanhMucChaId { get; set; }
+        }
         // Model thay đổi vai trò
         public class ChangeRoleModel
         {
@@ -490,6 +522,6 @@ namespace UniMarket.Controllers
             public string Password { get; set; }
         }
 
-      
+
     }
 }

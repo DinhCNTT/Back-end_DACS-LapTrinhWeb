@@ -146,8 +146,8 @@
   },
   {
     "ContainingType": "UniMarket.Controllers.AdminController",
-    "Method": "DeleteParentCategory",
-    "RelativePath": "api/admin/delete-parent-category/{id}",
+    "Method": "DeleteCategory",
+    "RelativePath": "api/admin/delete-category/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -162,8 +162,8 @@
   },
   {
     "ContainingType": "UniMarket.Controllers.AdminController",
-    "Method": "DeleteSubCategory",
-    "RelativePath": "api/admin/delete-subcategory/{id}",
+    "Method": "DeleteParentCategory",
+    "RelativePath": "api/admin/delete-parent-category/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -204,6 +204,16 @@
   },
   {
     "ContainingType": "UniMarket.Controllers.AdminController",
+    "Method": "GetCategories",
+    "RelativePath": "api/admin/get-categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniMarket.Controllers.AdminController",
     "Method": "GetParentCategories",
     "RelativePath": "api/admin/get-parent-categories",
     "HttpMethod": "GET",
@@ -233,6 +243,27 @@
       {
         "Name": "id",
         "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniMarket.Controllers.AdminController",
+    "Method": "UpdateCategory",
+    "RelativePath": "api/admin/update-category/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "UniMarket.Controllers.AdminController\u002BUpdateCategoryModel",
         "IsRequired": true
       }
     ],
@@ -315,27 +346,6 @@
         "Name": "tenDanhMucCha",
         "Type": "System.String",
         "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "UniMarket.Controllers.AdminController",
-    "Method": "UpdateSubCategory",
-    "RelativePath": "api/admin/update-subcategory/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "updatedCategory",
-        "Type": "UniMarket.Models.DanhMuc",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
