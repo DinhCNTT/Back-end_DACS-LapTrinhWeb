@@ -12,8 +12,8 @@ using UniMarket.DataAccess;
 namespace UniMarket.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250327082105_AddRolesToUsers")]
-    partial class AddRolesToUsers
+    [Migration("20250402101642_Updatel1")]
+    partial class Updatel1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -158,6 +158,29 @@ namespace UniMarket.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("UniMarket.Models.AnhTinDang", b =>
+                {
+                    b.Property<int>("MaAnh")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaAnh"));
+
+                    b.Property<string>("DuongDan")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<int>("MaTinDang")
+                        .HasColumnType("int");
+
+                    b.HasKey("MaAnh");
+
+                    b.HasIndex("MaTinDang");
+
+                    b.ToTable("AnhTinDangs");
+                });
+
             modelBuilder.Entity("UniMarket.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
@@ -237,6 +260,160 @@ namespace UniMarket.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("UniMarket.Models.DanhMuc", b =>
+                {
+                    b.Property<int>("MaDanhMuc")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaDanhMuc"));
+
+                    b.Property<int>("MaDanhMucCha")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TenDanhMuc")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("MaDanhMuc");
+
+                    b.HasIndex("MaDanhMucCha");
+
+                    b.ToTable("DanhMucs");
+                });
+
+            modelBuilder.Entity("UniMarket.Models.DanhMucCha", b =>
+                {
+                    b.Property<int>("MaDanhMucCha")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaDanhMucCha"));
+
+                    b.Property<string>("AnhDanhMuc")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Icon")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TenDanhMucCha")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("MaDanhMucCha");
+
+                    b.ToTable("DanhMucChas");
+                });
+
+            modelBuilder.Entity("UniMarket.Models.QuanHuyen", b =>
+                {
+                    b.Property<int>("MaQuanHuyen")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaQuanHuyen"));
+
+                    b.Property<int>("MaTinhThanh")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TenQuanHuyen")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("MaQuanHuyen");
+
+                    b.HasIndex("MaTinhThanh");
+
+                    b.ToTable("QuanHuyens");
+                });
+
+            modelBuilder.Entity("UniMarket.Models.TinDang", b =>
+                {
+                    b.Property<int>("MaTinDang")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaTinDang"));
+
+                    b.Property<bool>("CoTheThoaThuan")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("DiaChi")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<decimal>("Gia")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("MaDanhMuc")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MaNguoiBan")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int?>("MaQuanHuyen")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MaTinhThanh")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MoTa")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("NgayCapNhat")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("NgayDang")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("TieuDe")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("TinhTrang")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TrangThai")
+                        .HasColumnType("int");
+
+                    b.HasKey("MaTinDang");
+
+                    b.HasIndex("MaDanhMuc");
+
+                    b.HasIndex("MaNguoiBan");
+
+                    b.HasIndex("MaQuanHuyen");
+
+                    b.HasIndex("MaTinhThanh");
+
+                    b.ToTable("TinDangs");
+                });
+
+            modelBuilder.Entity("UniMarket.Models.TinhThanh", b =>
+                {
+                    b.Property<int>("MaTinhThanh")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaTinhThanh"));
+
+                    b.Property<string>("TenTinhThanh")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("MaTinhThanh");
+
+                    b.ToTable("TinhThanhs");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -286,6 +463,85 @@ namespace UniMarket.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("UniMarket.Models.AnhTinDang", b =>
+                {
+                    b.HasOne("UniMarket.Models.TinDang", "TinDang")
+                        .WithMany("AnhTinDangs")
+                        .HasForeignKey("MaTinDang")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TinDang");
+                });
+
+            modelBuilder.Entity("UniMarket.Models.DanhMuc", b =>
+                {
+                    b.HasOne("UniMarket.Models.DanhMucCha", "DanhMucCha")
+                        .WithMany("DanhMucs")
+                        .HasForeignKey("MaDanhMucCha")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("DanhMucCha");
+                });
+
+            modelBuilder.Entity("UniMarket.Models.QuanHuyen", b =>
+                {
+                    b.HasOne("UniMarket.Models.TinhThanh", "TinhThanh")
+                        .WithMany("QuanHuyens")
+                        .HasForeignKey("MaTinhThanh")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TinhThanh");
+                });
+
+            modelBuilder.Entity("UniMarket.Models.TinDang", b =>
+                {
+                    b.HasOne("UniMarket.Models.DanhMuc", "DanhMuc")
+                        .WithMany()
+                        .HasForeignKey("MaDanhMuc")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("UniMarket.Models.ApplicationUser", "NguoiBan")
+                        .WithMany()
+                        .HasForeignKey("MaNguoiBan")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("UniMarket.Models.QuanHuyen", "QuanHuyen")
+                        .WithMany()
+                        .HasForeignKey("MaQuanHuyen");
+
+                    b.HasOne("UniMarket.Models.TinhThanh", "TinhThanh")
+                        .WithMany()
+                        .HasForeignKey("MaTinhThanh");
+
+                    b.Navigation("DanhMuc");
+
+                    b.Navigation("NguoiBan");
+
+                    b.Navigation("QuanHuyen");
+
+                    b.Navigation("TinhThanh");
+                });
+
+            modelBuilder.Entity("UniMarket.Models.DanhMucCha", b =>
+                {
+                    b.Navigation("DanhMucs");
+                });
+
+            modelBuilder.Entity("UniMarket.Models.TinDang", b =>
+                {
+                    b.Navigation("AnhTinDangs");
+                });
+
+            modelBuilder.Entity("UniMarket.Models.TinhThanh", b =>
+                {
+                    b.Navigation("QuanHuyens");
                 });
 #pragma warning restore 612, 618
         }

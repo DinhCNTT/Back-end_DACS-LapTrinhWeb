@@ -4,6 +4,12 @@ using System.ComponentModel;
 
 namespace UniMarket.Models
 {
+    public enum TrangThaiTinDang
+    {
+        ChoDuyet = 0,  // Chờ Duyệt
+        DaDuyet = 1,   // Đã Duyệt
+        TuChoi = 2     // Từ Chối
+    }
     public class TinDang
     {
         [Key]
@@ -56,9 +62,8 @@ namespace UniMarket.Models
         public DateTime? NgayCapNhat { get; set; }
 
         [Required]
-        [Range(0, 2, ErrorMessage = "Trạng thái không hợp lệ.")]
         [DisplayName("Trạng thái tin")]
-        public byte TrangThai { get; set; } = 0;
+        public TrangThaiTinDang TrangThai { get; set; } = TrangThaiTinDang.ChoDuyet; // Mặc định là Chờ duyệt
 
         [ForeignKey("MaDanhMuc")]
         public DanhMuc? DanhMuc { get; set; }
@@ -74,4 +79,6 @@ namespace UniMarket.Models
 
         public ICollection<AnhTinDang>? AnhTinDangs { get; set; }
     }
+
+
 }

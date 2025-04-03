@@ -16,7 +16,7 @@ namespace UniMarket.Models
         public string? AnhDanhMuc { get; set; } // Lưu đường dẫn ảnh
 
         [Display(Name = "Icon danh mục cha")]
-        public string? Icon { get; set; } // Lưu đường dẫn icon
+        public string? Icon { get; set; } // Lưu đường dẫn iconAC
 
         [Display(Name = "Danh sách danh mục con")]
         public List<DanhMuc>? DanhMucs { get; set; } // Cho phép rỗng khi danh mục cha chưa có danh mục con

@@ -42,12 +42,14 @@ namespace UniMarket.Controllers
                 .Include(dm => dm.DanhMucs) // Bao gồm danh mục con
                 .Select(dm => new
                 {
+                    Id = dm.MaDanhMucCha, // Sử dụng MaDanhMucCha làm Id của danh mục cha
                     TenDanhMucCha = dm.TenDanhMucCha,
                     Icon = !string.IsNullOrEmpty(dm.Icon)
                         ? $"{baseUrl}/images/categories/{Path.GetFileName(dm.Icon)}"
                         : null,
                     DanhMucCon = dm.DanhMucs.Select(dmc => new
                     {
+                        Id = dmc.MaDanhMuc, // Thêm Id của danh mục con
                         TenDanhMucCon = dmc.TenDanhMuc
                     }).ToList()
                 })
@@ -55,7 +57,6 @@ namespace UniMarket.Controllers
 
             return Ok(categories);
         }
-
 
     }
 }

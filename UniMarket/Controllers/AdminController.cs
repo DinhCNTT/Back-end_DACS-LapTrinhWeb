@@ -500,6 +500,81 @@ namespace UniMarket.Controllers
             await _context.SaveChangesAsync();
             return Ok(new { message = "Xóa danh mục thành công!" });
         }
+
+        [HttpGet("get-posts")]
+        public IActionResult GetPosts()
+        {
+            var posts = _context.TinDangs
+        .Include(p => p.NguoiBan)
+        .Include(p => p.TinhThanh)  // Bao gồm thông tin tỉnh thành
+        .Include(p => p.QuanHuyen)  // Bao gồm thông tin quận huyện
+        .Select(p => new
+        {
+            p.MaTinDang,
+            p.TieuDe,
+            p.TrangThai,
+            NguoiBan = p.NguoiBan.FullName,
+            p.NgayDang,
+            TinhThanh = p.TinhThanh.TenTinhThanh, // Lấy tên tỉnh thành
+            QuanHuyen = p.QuanHuyen.TenQuanHuyen // Lấy tên quận huyện
+        })
+        .ToList();  // Đảm bảo API trả về một **mảng**
+
+            if (posts == null || !posts.Any())
+            {
+                return NotFound("Không có tin đăng nào.");
+            }
+
+            return Ok(posts); // Phải trả về danh sách []
+        }
+
+        [HttpPost("approve-post/{id}")]
+        public async Task<IActionResult> ApprovePost(int id)
+        {
+            var post = await _context.TinDangs.FindAsync(id);
+
+            if (post == null)
+            {
+                return NotFound("Tin đăng không tồn tại!");
+            }
+
+            if (post.TrangThai == TrangThaiTinDang.DaDuyet)
+            {
+                return BadRequest("Tin đăng này đã được duyệt rồi.");
+            }
+
+            post.TrangThai = TrangThaiTinDang.DaDuyet;
+
+            _context.TinDangs.Update(post);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Tin đăng đã được duyệt thành công!" });
+        }
+
+        [HttpPost("reject-post/{id}")]
+        public async Task<IActionResult> RejectPost(int id)
+        {
+            var post = await _context.TinDangs.FindAsync(id);
+
+            if (post == null)
+            {
+                return NotFound("Tin đăng không tồn tại!");
+            }
+
+            if (post.TrangThai == TrangThaiTinDang.TuChoi)
+            {
+                return BadRequest("Tin đăng này đã bị từ chối rồi.");
+            }
+
+            post.TrangThai = TrangThaiTinDang.TuChoi;
+
+            _context.TinDangs.Update(post);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Tin đăng đã bị từ chối!" });
+        }
+
+
         public class UpdateCategoryModel
         {
             public string TenDanhMuc { get; set; }

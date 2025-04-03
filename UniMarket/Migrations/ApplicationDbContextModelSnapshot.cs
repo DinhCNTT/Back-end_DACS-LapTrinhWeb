@@ -377,8 +377,8 @@ namespace UniMarket.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<byte>("TrangThai")
-                        .HasColumnType("tinyint");
+                    b.Property<int>("TrangThai")
+                        .HasColumnType("int");
 
                     b.HasKey("MaTinDang");
 
@@ -478,7 +478,7 @@ namespace UniMarket.Migrations
                     b.HasOne("UniMarket.Models.DanhMucCha", "DanhMucCha")
                         .WithMany("DanhMucs")
                         .HasForeignKey("MaDanhMucCha")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("DanhMucCha");
