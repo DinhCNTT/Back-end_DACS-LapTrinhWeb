@@ -24,8 +24,13 @@ namespace UniMarket.Controllers
                 .Select(dm => new
                 {
                     TenDanhMucCha = dm.TenDanhMucCha, // Lấy tên danh mục cha
+<<<<<<< HEAD
                     AnhDanhMucCha = !string.IsNullOrEmpty(dm.AnhDanhMucCha)
                         ? $"/images/categories/{Path.GetFileName(dm.AnhDanhMucCha)}" // Trả về đường dẫn tương đối
+=======
+                    AnhDanhMucCha = !string.IsNullOrEmpty(dm.AnhDanhMuc)
+                        ? $"/images/categories/{Path.GetFileName(dm.AnhDanhMuc)}" // Trả về đường dẫn tương đối
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
                         : null
                 })
                 .ToListAsync();
@@ -58,8 +63,13 @@ namespace UniMarket.Controllers
             return Ok(categories);
         }
 
+<<<<<<< HEAD
 
 
 
     }
 }
+=======
+    }
+}
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb

@@ -12,7 +12,10 @@ using Microsoft.EntityFrameworkCore;
 
 [Route("api/[controller]")]
 [ApiController]
+<<<<<<< HEAD
 
+=======
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
 public class AuthController : ControllerBase
 {
     private readonly UserManager<ApplicationUser> _userManager;
@@ -83,6 +86,7 @@ public class AuthController : ControllerBase
         var roles = await _userManager.GetRolesAsync(user);
         var token = GenerateJwtToken(user, roles.FirstOrDefault() ?? "User");
 
+<<<<<<< HEAD
         // ✅ Trả về ID, email, fullName, role, token
         return Ok(new
         {
@@ -95,6 +99,20 @@ public class AuthController : ControllerBase
     }
 
     // ✅ Hàm tạo JWT Token có chứa UserId
+=======
+        return Ok(new
+        {
+            token,
+            email = user.Email,
+            fullName = user.FullName, // ✅ Trả về họ tên
+            role = roles.FirstOrDefault() ?? "User"
+        });
+    }
+
+
+
+    // ✅ Hàm tạo JWT Token
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
     private string GenerateJwtToken(ApplicationUser user, string role)
     {
         var jwtSettings = _configuration.GetSection("Jwt");
@@ -106,8 +124,12 @@ public class AuthController : ControllerBase
         {
         new Claim(JwtRegisteredClaimNames.Sub, user.Email),
         new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+<<<<<<< HEAD
         new Claim(ClaimTypes.Role, role),
         new Claim(ClaimTypes.NameIdentifier, user.Id) // ✅ Đã thêm UserId trong token nếu bạn dùng token giải mã sau
+=======
+        new Claim(ClaimTypes.Role, role)
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
     };
 
         var token = new JwtSecurityToken(
@@ -121,7 +143,10 @@ public class AuthController : ControllerBase
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
     // Model đăng nhập
     public class LoginModel
     {

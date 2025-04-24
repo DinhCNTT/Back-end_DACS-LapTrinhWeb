@@ -171,6 +171,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "/api/admin/add-category": {
       "post": {
         "tags": [
@@ -195,6 +196,13 @@
             }
           }
         },
+=======
+    "/api/admin/get-parent-categories": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
         "responses": {
           "200": {
             "description": "OK"
@@ -281,6 +289,7 @@
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "DanhMuc": {
         "required": [
           "tenDanhMuc"
@@ -326,6 +335,8 @@
         },
         "additionalProperties": false
       },
+=======
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
       "EmployeeRoleModel": {
         "type": "object",
         "properties": {

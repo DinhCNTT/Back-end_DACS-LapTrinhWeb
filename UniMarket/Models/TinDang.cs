@@ -13,7 +13,10 @@ namespace UniMarket.Models
     public class TinDang
     {
         [Key]
+<<<<<<< HEAD
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+=======
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
         public int MaTinDang { get; set; }
 
         [Required]

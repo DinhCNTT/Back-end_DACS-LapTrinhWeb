@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UniMarket.DataAccess;
 
@@ -11,9 +12,11 @@ using UniMarket.DataAccess;
 namespace UniMarket.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250402101642_Updatel1")]
+    partial class Updatel1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -288,11 +291,7 @@ namespace UniMarket.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaDanhMucCha"));
 
-<<<<<<< HEAD
-                    b.Property<string>("AnhDanhMucCha")
-=======
                     b.Property<string>("AnhDanhMuc")
->>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Icon")
@@ -482,11 +481,7 @@ namespace UniMarket.Migrations
                     b.HasOne("UniMarket.Models.DanhMucCha", "DanhMucCha")
                         .WithMany("DanhMucs")
                         .HasForeignKey("MaDanhMucCha")
-<<<<<<< HEAD
-                        .OnDelete(DeleteBehavior.Cascade)
-=======
                         .OnDelete(DeleteBehavior.Restrict)
->>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
                         .IsRequired();
 
                     b.Navigation("DanhMucCha");

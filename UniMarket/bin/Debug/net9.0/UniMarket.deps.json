@@ -11,7 +11,10 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.3",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.3",
           "Microsoft.AspNetCore.Identity.UI": "9.0.3",
+<<<<<<< HEAD
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "9.0.3",
+=======
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
           "Microsoft.AspNetCore.OpenApi": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3",
@@ -653,6 +656,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.AspNetCore.JsonPatch/9.0.3": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -678,6 +682,8 @@
           }
         }
       },
+=======
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
       "Microsoft.AspNetCore.OpenApi/9.0.2": {
         "dependencies": {
           "Microsoft.OpenApi": "1.6.23"
@@ -1218,7 +1224,10 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.CSharp/4.7.0": {},
+=======
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
       "Microsoft.Data.SqlClient/5.1.6": {
         "dependencies": {
           "Azure.Identity": "1.11.4",
@@ -1925,6 +1934,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "Newtonsoft.Json.Bson/1.0.2": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3"
@@ -1936,6 +1946,8 @@
           }
         }
       },
+=======
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
       "NuGet.Common/6.11.0": {
         "dependencies": {
           "NuGet.Frameworks": "6.11.0"
@@ -2836,6 +2848,7 @@
       "path": "microsoft.aspnetcore.identity.ui/9.0.3",
       "hashPath": "microsoft.aspnetcore.identity.ui.9.0.3.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.AspNetCore.JsonPatch/9.0.3": {
       "type": "package",
       "serviceable": true,
@@ -2850,6 +2863,8 @@
       "path": "microsoft.aspnetcore.mvc.newtonsoftjson/9.0.3",
       "hashPath": "microsoft.aspnetcore.mvc.newtonsoftjson.9.0.3.nupkg.sha512"
     },
+=======
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
     "Microsoft.AspNetCore.OpenApi/9.0.2": {
       "type": "package",
       "serviceable": true,
@@ -2976,6 +2991,7 @@
       "path": "microsoft.codeanalysis.workspaces.msbuild/4.8.0",
       "hashPath": "microsoft.codeanalysis.workspaces.msbuild.4.8.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.CSharp/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -2983,6 +2999,8 @@
       "path": "microsoft.csharp/4.7.0",
       "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
+=======
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
     "Microsoft.Data.SqlClient/5.1.6": {
       "type": "package",
       "serviceable": true,
@@ -3326,6 +3344,7 @@
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Newtonsoft.Json.Bson/1.0.2": {
       "type": "package",
       "serviceable": true,
@@ -3333,6 +3352,8 @@
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
     },
+=======
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
     "NuGet.Common/6.11.0": {
       "type": "package",
       "serviceable": true,

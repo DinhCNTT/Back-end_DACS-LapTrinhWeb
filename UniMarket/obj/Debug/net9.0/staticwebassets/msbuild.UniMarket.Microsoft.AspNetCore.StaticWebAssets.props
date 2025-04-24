@@ -36,11 +36,16 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\017de00e-d62a-453a-9574-6433ff10fdf7_Screenshot 2025-03-16 141318.png'))">
+=======
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\mail_open_open_envelope_icon_264213.ico'))">
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
       <SourceType>Package</SourceType>
       <SourceId>UniMarket</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UniMarket</BasePath>
+<<<<<<< HEAD
       <RelativePath>images/categories/017de00e-d62a-453a-9574-6433ff10fdf7_Screenshot 2025-03-16 141318.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -96,6 +101,9 @@
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UniMarket</BasePath>
       <RelativePath>images/categories/0ee99bac-8ad4-4fa6-8737-21aa2a8f69c6_mail_open_open_envelope_icon_264213.ico</RelativePath>
+=======
+      <RelativePath>images/categories/mail_open_open_envelope_icon_264213.ico</RelativePath>
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -106,13 +114,20 @@
       <Integrity>dircHvSHOygmqJK4VXyUB65OFLYJ9u1PaGJzJJYWPKI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+<<<<<<< HEAD
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\0ee99bac-8ad4-4fa6-8737-21aa2a8f69c6_mail_open_open_envelope_icon_264213.ico'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\0ff9bd0e-37b0-4ea2-9152-b69a9f04aaaa_anh-bia-do-gia-dung-sieu-dep-cho-zalo_075558531.jpg'))">
+=======
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\mail_open_open_envelope_icon_264213.ico'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\Screenshot 2025-03-15 232418.png'))">
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
       <SourceType>Package</SourceType>
       <SourceId>UniMarket</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UniMarket</BasePath>
+<<<<<<< HEAD
       <RelativePath>images/categories/0ff9bd0e-37b0-4ea2-9152-b69a9f04aaaa_anh-bia-do-gia-dung-sieu-dep-cho-zalo_075558531.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -852,6 +867,9 @@
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UniMarket</BasePath>
       <RelativePath>images/categories/d1cc731f-95b3-495b-8b9d-8c6d0d2ea796_Screenshot 2025-03-15 232418.png</RelativePath>
+=======
+      <RelativePath>images/categories/Screenshot 2025-03-15 232418.png</RelativePath>
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -862,20 +880,31 @@
       <Integrity>6ZY68cktEnIK+HF0m/cQysj5Kexq88VA33VfQZ/WCP0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+<<<<<<< HEAD
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\d1cc731f-95b3-495b-8b9d-8c6d0d2ea796_Screenshot 2025-03-15 232418.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\d31e81bb-0c6e-47c7-91e1-af88fed268c0_workspace5-flat-lay_122060.ico'))">
+=======
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\Screenshot 2025-03-15 232418.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\Screenshot 2025-03-16 100610.png'))">
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
       <SourceType>Package</SourceType>
       <SourceId>UniMarket</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UniMarket</BasePath>
+<<<<<<< HEAD
       <RelativePath>images/categories/d31e81bb-0c6e-47c7-91e1-af88fed268c0_workspace5-flat-lay_122060.ico</RelativePath>
+=======
+      <RelativePath>images/categories/Screenshot 2025-03-16 100610.png</RelativePath>
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
+<<<<<<< HEAD
       <Fingerprint>drsj5dwnvu</Fingerprint>
       <Integrity>WVHZ0LufKgQZ4F9CxohUjbavwuVhW9lm8Q+ybHqggXI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
@@ -883,17 +912,31 @@
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\d31e81bb-0c6e-47c7-91e1-af88fed268c0_workspace5-flat-lay_122060.ico'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\d7cf3166-7e7b-4547-901c-53df2c9a1dd4_1bba4babd7c632f61b2a6d51a176c956.jpg'))">
+=======
+      <Fingerprint>kubbqtguy9</Fingerprint>
+      <Integrity>vH7p1//B7oQqHzwEkPnOpgB0Ox6FMYv8q7O58AQCb+Y=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\Screenshot 2025-03-16 100610.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\Screenshot 2025-03-16 220627.png'))">
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
       <SourceType>Package</SourceType>
       <SourceId>UniMarket</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UniMarket</BasePath>
+<<<<<<< HEAD
       <RelativePath>images/categories/d7cf3166-7e7b-4547-901c-53df2c9a1dd4_1bba4babd7c632f61b2a6d51a176c956.jpg</RelativePath>
+=======
+      <RelativePath>images/categories/Screenshot 2025-03-16 220627.png</RelativePath>
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
+<<<<<<< HEAD
       <Fingerprint>b5cegn3q21</Fingerprint>
       <Integrity>AU9hk1pcVbPJMw6bfDyzAftVXlJVUBxgiJ8jjdCVwO0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
@@ -901,10 +944,20 @@
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\d7cf3166-7e7b-4547-901c-53df2c9a1dd4_1bba4babd7c632f61b2a6d51a176c956.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\d8949d73-d1ef-4f0d-8e19-1c9f2a416637_live-music.png'))">
+=======
+      <Fingerprint>2zt3yhaxzr</Fingerprint>
+      <Integrity>fuC6yEiDFsppkPIYg0zvLRWafjAuvfJzg5dfT/oI1fA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\Screenshot 2025-03-16 220627.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\Screenshot 2025-03-17 092620.png'))">
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
       <SourceType>Package</SourceType>
       <SourceId>UniMarket</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UniMarket</BasePath>
+<<<<<<< HEAD
       <RelativePath>images/categories/d8949d73-d1ef-4f0d-8e19-1c9f2a416637_live-music.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -924,6 +977,9 @@
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UniMarket</BasePath>
       <RelativePath>images/categories/da50960f-49a6-4495-b20a-e89aa5f3d4d1_Screenshot 2025-03-17 092620.png</RelativePath>
+=======
+      <RelativePath>images/categories/Screenshot 2025-03-17 092620.png</RelativePath>
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -934,20 +990,31 @@
       <Integrity>doyD+nH4j/R08Dd9til7Rn27NpHJ9bJz/fMUm369wZA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+<<<<<<< HEAD
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\da50960f-49a6-4495-b20a-e89aa5f3d4d1_Screenshot 2025-03-17 092620.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\dd242362-7c3c-4ecb-ab88-bbc9db05486f_0ecc6077-0667-488a-944b-98a8980c1c33.jpg'))">
+=======
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\Screenshot 2025-03-17 092620.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\Screenshot 2025-04-02 143822.png'))">
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
       <SourceType>Package</SourceType>
       <SourceId>UniMarket</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/UniMarket</BasePath>
+<<<<<<< HEAD
       <RelativePath>images/categories/dd242362-7c3c-4ecb-ab88-bbc9db05486f_0ecc6077-0667-488a-944b-98a8980c1c33.jpg</RelativePath>
+=======
+      <RelativePath>images/categories/Screenshot 2025-04-02 143822.png</RelativePath>
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
+<<<<<<< HEAD
       <Fingerprint>6903potwt0</Fingerprint>
       <Integrity>Cg0sKscFpakW33KUj/7S1rnVaSF1ii+sB7anVNVQdnA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
@@ -1421,6 +1488,13 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Posts\OIP.jpg'))</OriginalItemSpec>
+=======
+      <Fingerprint>xk0bw3ipzu</Fingerprint>
+      <Integrity>T7wFZdWONovBWHq5anQMZJ/O5yKrMRDMrNPm35gOqCg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\categories\Screenshot 2025-04-02 143822.png'))</OriginalItemSpec>
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))">
       <SourceType>Package</SourceType>

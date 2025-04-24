@@ -209,15 +209,22 @@ namespace UniMarket.Controllers
             }
             return Ok(employeeList);
         }
+<<<<<<< HEAD
 
         [HttpGet("get-parent-categories")]
         public async Task<IActionResult> GetParentCategories()
+=======
+        //quản lý danh mục cha
+        [HttpGet("get-parent-categories")]
+        public async Task<IActionResult> GetParentCategories() //hàm lấy danh sách danh mục cha
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
         {
             var parentCategories = await _context.DanhMucChas
                 .Select(d => new
                 {
                     d.MaDanhMucCha,
                     d.TenDanhMucCha,
+<<<<<<< HEAD
                     d.AnhDanhMucCha,
                     d.Icon // Thêm icon vào query
                 })
@@ -277,6 +284,18 @@ namespace UniMarket.Controllers
     [FromForm] string tenDanhMucCha,
     [FromForm] IFormFile? anhDanhMucCha,
     [FromForm] IFormFile? icon)
+=======
+                    d.AnhDanhMuc,
+                    d.Icon
+                })
+                .ToListAsync();
+
+            return Ok(parentCategories);
+        }
+
+        [HttpPost("add-parent-category")]  //hàm thêm danh mục cha
+        public async Task<IActionResult> AddParentCategory([FromForm] IFormFile anhDanhMuc, [FromForm] IFormFile icon, [FromForm] string tenDanhMucCha)
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
         {
             if (string.IsNullOrWhiteSpace(tenDanhMucCha))
                 return BadRequest("Tên danh mục không được để trống!");
@@ -285,6 +304,7 @@ namespace UniMarket.Controllers
             if (exists)
                 return BadRequest("Danh mục cha đã tồn tại!");
 
+<<<<<<< HEAD
             var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/categories");
             if (!Directory.Exists(folderPath))
                 Directory.CreateDirectory(folderPath);
@@ -315,18 +335,48 @@ namespace UniMarket.Controllers
                 }
 
                 iconUrl = $"/images/categories/{iconFileName}";
+=======
+            // Lưu ảnh và icon vào thư mục wwwroot/images/categories
+            string imagePath = null;
+            string iconPath = null;
+
+            if (anhDanhMuc != null)
+            {
+                imagePath = Path.Combine("images/categories", anhDanhMuc.FileName);
+                var fullPath = Path.Combine("wwwroot", imagePath);
+                using (var stream = new FileStream(fullPath, FileMode.Create))
+                {
+                    await anhDanhMuc.CopyToAsync(stream);
+                }
+            }
+
+            if (icon != null)
+            {
+                iconPath = Path.Combine("images/categories", icon.FileName);
+                var fullPath = Path.Combine("wwwroot", iconPath);
+                using (var stream = new FileStream(fullPath, FileMode.Create))
+                {
+                    await icon.CopyToAsync(stream);
+                }
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
             }
 
             var newCategory = new DanhMucCha
             {
                 TenDanhMucCha = tenDanhMucCha,
+<<<<<<< HEAD
                 AnhDanhMucCha = imageUrl,
                 Icon = iconUrl
+=======
+                AnhDanhMuc = imagePath,
+                Icon = iconPath
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
             };
 
             _context.DanhMucChas.Add(newCategory);
             await _context.SaveChangesAsync();
 
+<<<<<<< HEAD
             var baseUrl = $"{Request.Scheme}://{Request.Host}";
 
             return Ok(new
@@ -336,6 +386,175 @@ namespace UniMarket.Controllers
                 Icon = iconUrl != null ? $"{baseUrl}{iconUrl}" : null
             });
         }
+=======
+            return Ok(new { message = "Thêm danh mục cha thành công!", category = newCategory });
+        }
+
+        [HttpGet("get-subcategories")]
+        public async Task<IActionResult> GetSubCategories()
+        {
+            var subCategories = await _context.DanhMucs
+                .Include(d => d.DanhMucCha)
+                .Select(d => new
+                {
+                    d.MaDanhMuc,
+                    d.TenDanhMuc,
+                    TenDanhMucCha = d.DanhMucCha.TenDanhMucCha,
+                    AnhDanhMuc = d.DanhMucCha.AnhDanhMuc, // Lấy từ danh mục cha
+                    Icon = d.DanhMucCha.Icon // Lấy từ danh mục cha
+                })
+                .ToListAsync();
+
+            return Ok(subCategories);
+        }
+
+        [HttpPut("update-parent-category/{id}")] //hàm update danh mục cha
+        public async Task<IActionResult> UpdateParentCategory(int id,
+     [FromForm] IFormFile? anhDanhMuc, // Thêm dấu ? để cho phép null
+    [FromForm] IFormFile? icon,
+    [FromForm] string? tenDanhMucCha) // Cho phép null
+        {
+            var category = await _context.DanhMucChas.FindAsync(id);
+            if (category == null)
+                return NotFound("Danh mục cha không tồn tại.");
+
+            if (!string.IsNullOrWhiteSpace(tenDanhMucCha))
+            {
+                // Kiểm tra trùng tên (trừ chính nó)
+                bool exists = await _context.DanhMucChas
+                    .AnyAsync(d => d.TenDanhMucCha == tenDanhMucCha && d.MaDanhMucCha != id);
+
+                if (exists)
+                    return BadRequest("Tên danh mục cha đã tồn tại!");
+
+                category.TenDanhMucCha = tenDanhMucCha;
+            }
+            // Thêm debug log
+            Console.WriteLine($"Updating category {id} with name: {tenDanhMucCha}");
+
+            // Xử lý ảnh mới
+            if (anhDanhMuc != null)
+            {
+                string imagePath = Path.Combine("images/categories", anhDanhMuc.FileName);
+                var fullPath = Path.Combine("wwwroot", imagePath);
+
+                using (var stream = new FileStream(fullPath, FileMode.Create))
+                {
+                    await anhDanhMuc.CopyToAsync(stream);
+                }
+
+                // Xóa ảnh cũ nếu có
+                if (!string.IsNullOrEmpty(category.AnhDanhMuc))
+                {
+                    var oldImagePath = Path.Combine("wwwroot", category.AnhDanhMuc);
+                    if (System.IO.File.Exists(oldImagePath))
+                    {
+                        System.IO.File.Delete(oldImagePath);
+                    }
+                }
+
+                category.AnhDanhMuc = imagePath;
+            }
+
+            // Xử lý icon mới
+            if (icon != null)
+            {
+                string iconPath = Path.Combine("images/categories", icon.FileName);
+                var fullPath = Path.Combine("wwwroot", iconPath);
+
+                using (var stream = new FileStream(fullPath, FileMode.Create))
+                {
+                    await icon.CopyToAsync(stream);
+                }
+
+                // Xóa icon cũ nếu có
+                if (!string.IsNullOrEmpty(category.Icon))
+                {
+                    var oldIconPath = Path.Combine("wwwroot", category.Icon);
+                    if (System.IO.File.Exists(oldIconPath))
+                    {
+                        System.IO.File.Delete(oldIconPath);
+                    }
+                }
+
+                category.Icon = iconPath;
+            }
+
+            await _context.SaveChangesAsync();
+            return Ok(new
+            {
+                message = "Cập nhật danh mục cha thành công!",
+                category = new
+                {
+                    category.MaDanhMucCha,
+                    category.TenDanhMucCha,
+                    category.AnhDanhMuc,
+                    category.Icon
+                }
+            });
+        }
+        //hàm xóa danh mục cha
+        [HttpDelete("delete-parent-category/{id}")]
+        public async Task<IActionResult> DeleteParentCategory(int id)
+        {
+            var category = await _context.DanhMucChas
+                .Include(c => c.DanhMucs) // Include các danh mục con
+                .FirstOrDefaultAsync(c => c.MaDanhMucCha == id);
+
+            if (category == null)
+                return NotFound("Danh mục cha không tồn tại.");
+
+            if (category.DanhMucs.Any())
+            {
+                var subCategoryNames = category.DanhMucs.Select(sub => sub.TenDanhMuc).ToList();
+                var subCategoryList = string.Join(", ", subCategoryNames);
+                Console.WriteLine($"Không thể xóa danh mục cha khi còn danh mục con: {subCategoryList}"); // Logging
+                return BadRequest(new { message = $"Không thể xóa danh mục cha khi còn danh mục con: {subCategoryList}. Vui lòng xóa các danh mục con trước." });
+            }
+
+            // Xóa ảnh và icon nếu có
+            if (!string.IsNullOrEmpty(category.AnhDanhMuc))
+            {
+                var imagePath = Path.Combine("wwwroot", category.AnhDanhMuc);
+                if (System.IO.File.Exists(imagePath))
+                {
+                    System.IO.File.Delete(imagePath);
+                }
+            }
+
+            if (!string.IsNullOrEmpty(category.Icon))
+            {
+                var iconPath = Path.Combine("wwwroot", category.Icon);
+                if (System.IO.File.Exists(iconPath))
+                {
+                    System.IO.File.Delete(iconPath);
+                }
+            }
+
+            _context.DanhMucChas.Remove(category);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Xóa danh mục cha thành công!" });
+        }
+        //quản lý danh mục con
+        //hàm lấy danh sách danh mục con
+
+        [HttpGet("get-categories")]
+        public async Task<IActionResult> GetCategories()
+        {
+            var categories = await _context.DanhMucs
+                .Select(dm => new {
+                    dm.MaDanhMuc,
+                    dm.TenDanhMuc,
+                    dm.MaDanhMucCha
+                })
+                .ToListAsync();
+
+            return Ok(categories);
+        }
+
+
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
         //hàm update danh mục con
         [HttpPut("update-category/{id}")]
         public async Task<IActionResult> UpdateCategory(int id, [FromBody] UpdateCategoryModel model)
@@ -357,6 +576,7 @@ namespace UniMarket.Controllers
             await _context.SaveChangesAsync();
             return Ok(new { message = "Cập nhật danh mục thành công!" });
         }
+<<<<<<< HEAD
         // xóa danh mục con
         [HttpDelete("delete-category/{id}")]
         public async Task<IActionResult> DeleteCategory(int id)
@@ -513,6 +733,99 @@ namespace UniMarket.Controllers
             {
                 return StatusCode(500, new { message = "Lỗi server khi xóa danh mục!", error = ex.Message });
             }
+=======
+        //hàm thêm danh mục con
+
+        [HttpPost("add-category")]
+        public async Task<IActionResult> AddCategory([FromForm] string tenDanhMuc, [FromForm] int maDanhMucCha)
+        {
+            if (maDanhMucCha == 0)
+            {
+                return BadRequest("Danh mục con bắt buộc phải có danh mục cha!");
+            }
+
+            var parentCategory = await _context.DanhMucChas.FindAsync(maDanhMucCha);
+            if (parentCategory == null)
+            {
+                return BadRequest("Mã danh mục cha không hợp lệ!");
+            }
+
+            var newCategory = new DanhMuc
+            {
+                TenDanhMuc = tenDanhMuc,
+                MaDanhMucCha = maDanhMucCha
+            };
+
+            _context.DanhMucs.Add(newCategory);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Thêm danh mục thành công!" });
+        }
+
+        //hàm xóa danh mục con
+        [HttpDelete("delete-category/{id}")]
+        public async Task<IActionResult> DeleteCategory(int id)
+        {
+            var danhMuc = await _context.DanhMucs.FindAsync(id);
+            if (danhMuc == null)
+            {
+                return NotFound("Danh mục không tồn tại.");
+            }
+
+            _context.DanhMucs.Remove(danhMuc);
+            await _context.SaveChangesAsync();
+            return Ok(new { message = "Xóa danh mục thành công!" });
+        }
+
+        [HttpGet("get-posts")]
+        public IActionResult GetPosts()
+        {
+            var posts = _context.TinDangs
+        .Include(p => p.NguoiBan)
+        .Include(p => p.TinhThanh)  // Bao gồm thông tin tỉnh thành
+        .Include(p => p.QuanHuyen)  // Bao gồm thông tin quận huyện
+        .Select(p => new
+        {
+            p.MaTinDang,
+            p.TieuDe,
+            p.TrangThai,
+            NguoiBan = p.NguoiBan.FullName,
+            p.NgayDang,
+            TinhThanh = p.TinhThanh.TenTinhThanh, // Lấy tên tỉnh thành
+            QuanHuyen = p.QuanHuyen.TenQuanHuyen // Lấy tên quận huyện
+        })
+        .ToList();  // Đảm bảo API trả về một **mảng**
+
+            if (posts == null || !posts.Any())
+            {
+                return NotFound("Không có tin đăng nào.");
+            }
+
+            return Ok(posts); // Phải trả về danh sách []
+        }
+
+        [HttpPost("approve-post/{id}")]
+        public async Task<IActionResult> ApprovePost(int id)
+        {
+            var post = await _context.TinDangs.FindAsync(id);
+
+            if (post == null)
+            {
+                return NotFound("Tin đăng không tồn tại!");
+            }
+
+            if (post.TrangThai == TrangThaiTinDang.DaDuyet)
+            {
+                return BadRequest("Tin đăng này đã được duyệt rồi.");
+            }
+
+            post.TrangThai = TrangThaiTinDang.DaDuyet;
+
+            _context.TinDangs.Update(post);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Tin đăng đã được duyệt thành công!" });
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
         }
 
         [HttpPost("reject-post/{id}")]
@@ -538,6 +851,7 @@ namespace UniMarket.Controllers
             return Ok(new { message = "Tin đăng đã bị từ chối!" });
         }
 
+<<<<<<< HEAD
         [HttpPost("approve-post/{id}")]
         public async Task<IActionResult> ApprovePost(int id, [FromForm] IFormFile? image)
         {
@@ -592,12 +906,18 @@ namespace UniMarket.Controllers
 
             return Ok(new { message = "Tin đăng đã được duyệt và ảnh đã được lưu!" });
         }
+=======
+
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
         public class UpdateCategoryModel
         {
             public string TenDanhMuc { get; set; }
             public int DanhMucChaId { get; set; }
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
         // Model thay đổi vai trò
         public class ChangeRoleModel
         {
@@ -615,5 +935,9 @@ namespace UniMarket.Controllers
             public string Password { get; set; }
         }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 943974eeb10876c1b0694a7901d19e5ad515c6cb
     }
 }
