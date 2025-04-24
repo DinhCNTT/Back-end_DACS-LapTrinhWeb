@@ -33,6 +33,8 @@ namespace UniMarket.Controllers
                 .Include(p => p.TinhThanh)
                 .Include(p => p.QuanHuyen)
                 .Include(p => p.AnhTinDangs)
+                .Include(p => p.DanhMuc) // Bao gồm thông tin danh mục
+                    .ThenInclude(dm => dm.DanhMucCha) // Bao gồm thông tin danh mục cha
                 .Select(p => new
                 {
                     p.MaTinDang,
@@ -53,7 +55,9 @@ namespace UniMarket.Controllers
                     ).ToList(),
                     NguoiBan = p.NguoiBan.FullName,
                     TinhThanh = p.TinhThanh.TenTinhThanh,
-                    QuanHuyen = p.QuanHuyen.TenQuanHuyen
+                    QuanHuyen = p.QuanHuyen.TenQuanHuyen,
+                    DanhMuc = p.DanhMuc.TenDanhMuc, // Thêm tên danh mục con
+                    DanhMucCha = p.DanhMuc.DanhMucCha.TenDanhMucCha // Thêm tên danh mục cha
                 })
                 .ToList();
 
@@ -64,6 +68,7 @@ namespace UniMarket.Controllers
 
             return Ok(posts);
         }
+
 
 
         [HttpPost("add-post")]
@@ -181,49 +186,95 @@ namespace UniMarket.Controllers
             return Ok(posts);
         }
 
-
-        // PUT: api/tindang/{id} (Cập nhật tin đăng)
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTinDang(int id, [FromBody] TinDang tinDang)
+        public async Task<IActionResult> PutTinDang(int id, [FromForm] TinDang tinDang, IFormFile? image)
         {
-            if (id != tinDang.MaTinDang)
-            {
-                return BadRequest(new { message = "Mã tin đăng không khớp" });
-            }
+            var existingTinDang = await _context.TinDangs
+                .Include(td => td.AnhTinDangs)
+                .FirstOrDefaultAsync(td => td.MaTinDang == id);
 
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            var existingTinDang = await _context.TinDangs.FindAsync(id);
             if (existingTinDang == null)
             {
                 return NotFound(new { message = "Không tìm thấy tin đăng" });
             }
 
+            // Cập nhật các thông tin của tin đăng
             existingTinDang.TieuDe = tinDang.TieuDe;
             existingTinDang.MoTa = tinDang.MoTa;
             existingTinDang.Gia = tinDang.Gia;
             existingTinDang.CoTheThoaThuan = tinDang.CoTheThoaThuan;
             existingTinDang.TinhTrang = tinDang.TinhTrang;
             existingTinDang.DiaChi = tinDang.DiaChi;
-            existingTinDang.TrangThai = tinDang.TrangThai;
             existingTinDang.NgayCapNhat = DateTime.Now;
 
-            _context.Entry(existingTinDang).State = EntityState.Modified;
+            // Xử lý ảnh mới nếu có
+            if (image != null)
+            {
+                // Xóa ảnh cũ khỏi danh sách
+                if (existingTinDang.AnhTinDangs != null && existingTinDang.AnhTinDangs.Count > 0)
+                {
+                    existingTinDang.AnhTinDangs.Clear();
+                }
+
+                // Tạo tên file ngẫu nhiên
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(image.FileName);
+                var filePath = Path.Combine("wwwroot/images/Posts", fileName);
+
+                // Tạo folder nếu chưa có
+                Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+
+                // Lưu ảnh mới vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await image.CopyToAsync(stream);
+                }
+
+                var postImage = new AnhTinDang
+                {
+                    DuongDan = $"/images/Posts/{fileName}",   // Chuẩn đường dẫn FE
+                    TinDang = existingTinDang
+                };
+
+                existingTinDang.AnhTinDangs ??= new List<AnhTinDang>();
+                existingTinDang.AnhTinDangs.Add(postImage);
+            }
 
             try
             {
+                // Lưu thay đổi vào cơ sở dữ liệu
                 await _context.SaveChangesAsync();
+
+                // Trả về thông báo thành công và danh sách ảnh của tin đăng
+                return Ok(new { message = "Cập nhật tin đăng thành công", AnhTinDang = existingTinDang.AnhTinDangs });
             }
-            catch (DbUpdateConcurrencyException)
+            catch (Exception ex)
             {
-                return StatusCode(500, new { message = "Lỗi khi cập nhật tin đăng" });
+                // Trả về lỗi nếu có bất kỳ ngoại lệ nào xảy ra
+                return StatusCode(500, new { message = "Lỗi khi cập nhật tin đăng", error = ex.Message });
+            }
+        }
+
+
+
+        [HttpGet("get-post/{id}")]
+        public async Task<IActionResult> GetPostById(int id)
+        {
+            // Tìm tin đăng trong cơ sở dữ liệu theo ID và bao gồm thông tin về danh mục
+            var post = await _context.TinDangs
+                .Include(p => p.AnhTinDangs)  // Bao gồm các ảnh tin đăng nếu có
+                .Include(p => p.DanhMuc)      // Bao gồm thông tin danh mục
+                .FirstOrDefaultAsync(p => p.MaTinDang == id);  // Lọc theo ID tin đăng
+
+            if (post == null)
+            {
+                return NotFound(new { message = "Không tìm thấy tin đăng với mã này." });
             }
 
-            return NoContent();
+            // Trả về thông tin tin đăng dưới dạng JSON, bao gồm cả mã danh mục
+            return Ok(post);
         }
+
+
 
         // DELETE: api/tindang/{id} (Xóa tin đăng)
         [HttpDelete("{id}")]
@@ -286,15 +337,6 @@ namespace UniMarket.Controllers
 
             return Ok(posts);
         }
-         
-
-
-
-
-
-
-
-
         // GET: api/tindang/tinhthanh
         [HttpGet("tinhthanh")]
         public async Task<ActionResult<IEnumerable<TinhThanhDTO>>> GetTinhThanhs()
@@ -341,5 +383,68 @@ namespace UniMarket.Controllers
 
             return Ok(quanHuyens);
         }
+
+        [HttpGet("get-post-and-similar/{id}")]
+        public async Task<IActionResult> GetPostAndSimilarPosts(int id)
+        {
+            // Lấy chi tiết tin đăng theo ID
+            var post = await _context.TinDangs
+                .Include(p => p.AnhTinDangs)
+                .Include(p => p.NguoiBan) // Bao gồm thông tin người bán
+                .Include(p => p.TinhThanh)
+                .Include(p => p.QuanHuyen)
+                .FirstOrDefaultAsync(p => p.MaTinDang == id && p.TrangThai == TrangThaiTinDang.DaDuyet); // Thêm điều kiện chỉ lấy tin đã duyệt
+
+            if (post == null)
+            {
+                return NotFound(new { message = "Không tìm thấy tin đăng này hoặc tin đăng chưa được duyệt." });
+            }
+
+            // Lấy các tin đăng tương tự của người bán, chỉ lấy tin đã duyệt
+            var similarPosts = await _context.TinDangs
+                .Where(p => p.MaNguoiBan == post.MaNguoiBan && p.MaTinDang != post.MaTinDang && p.TrangThai == TrangThaiTinDang.DaDuyet) // Chỉ lấy tin đã duyệt
+                .Include(p => p.AnhTinDangs)
+                .Include(p => p.NguoiBan)
+                .Include(p => p.TinhThanh)
+                .Include(p => p.QuanHuyen)
+                .Select(p => new
+                {
+                    p.MaTinDang,
+                    p.TieuDe,
+                    p.MoTa,
+                    p.Gia,
+                    p.TinhTrang,
+                    p.DiaChi,
+                    Images = p.AnhTinDangs.Select(a => a.DuongDan.StartsWith("/images/Posts/") ? a.DuongDan : $"/images/Posts/{a.DuongDan}").ToList(),
+                    NguoiBan = p.NguoiBan.FullName,
+                    PhoneNumber = p.NguoiBan.PhoneNumber, // Thêm số điện thoại người bán
+                    TinhThanh = p.TinhThanh.TenTinhThanh,
+                    QuanHuyen = p.QuanHuyen.TenQuanHuyen
+                })
+                .ToListAsync();
+
+            return Ok(new
+            {
+                Post = new
+                {
+                    post.MaTinDang,
+                    post.TieuDe,
+                    post.MoTa,
+                    post.Gia,
+                    post.TinhTrang,
+                    post.DiaChi,
+                    Images = post.AnhTinDangs.Select(a => a.DuongDan.StartsWith("/images/Posts/") ? a.DuongDan : $"/images/Posts/{a.DuongDan}").ToList(),
+                    NguoiBan = post.NguoiBan.FullName,
+                    PhoneNumber = post.NguoiBan.PhoneNumber, // Thêm số điện thoại người bán
+                    TinhThanh = post.TinhThanh.TenTinhThanh,
+                    QuanHuyen = post.QuanHuyen.TenQuanHuyen,
+                    NgayDang = post.NgayDang, // Thêm ngày đăng
+                    NgayCapNhat = post.NgayCapNhat // Thêm ngày cập nhật
+                },
+                SimilarPosts = similarPosts
+            });
+
+        }
     }
+
 }

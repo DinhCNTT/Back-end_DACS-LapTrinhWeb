@@ -498,9 +498,264 @@
         "IsRequired": true
       },
       {
-        "Name": "tinDang",
-        "Type": "UniMarket.Models.TinDang",
-        "IsRequired": true
+        "Name": "MaTinDang",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaNguoiBan",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaDanhMuc",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TieuDe",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MoTa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Gia",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "CoTheThoaThuan",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "TinhTrang",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DiaChi",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaTinhThanh",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaQuanHuyen",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "NgayDang",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "NgayCapNhat",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "TrangThai",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DanhMuc.MaDanhMuc",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DanhMuc.TenDanhMuc",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DanhMuc.MaDanhMucCha",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DanhMuc.DanhMucCha.MaDanhMucCha",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DanhMuc.DanhMucCha.TenDanhMucCha",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DanhMuc.DanhMucCha.DanhMucs",
+        "Type": "System.Collections.Generic.List\u00601[[UniMarket.Models.DanhMuc, UniMarket, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "DanhMuc.DanhMucCha.AnhDanhMucCha",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DanhMuc.DanhMucCha.Icon",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.FullName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.Address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.Age",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.Role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.NormalizedUserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.NormalizedEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.EmailConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.PasswordHash",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.SecurityStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.ConcurrencyStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.PhoneNumberConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.TwoFactorEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.LockoutEnd",
+        "Type": "System.Nullable\u00601[[System.DateTimeOffset, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.LockoutEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiBan.AccessFailedCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TinhThanh.MaTinhThanh",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TinhThanh.TenTinhThanh",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TinhThanh.QuanHuyens",
+        "Type": "System.Collections.Generic.ICollection\u00601[[UniMarket.Models.QuanHuyen, UniMarket, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "QuanHuyen.MaQuanHuyen",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "QuanHuyen.TenQuanHuyen",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "QuanHuyen.MaTinhThanh",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "QuanHuyen.TinhThanh.MaTinhThanh",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "QuanHuyen.TinhThanh.TenTinhThanh",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "QuanHuyen.TinhThanh.QuanHuyens",
+        "Type": "System.Collections.Generic.ICollection\u00601[[UniMarket.Models.QuanHuyen, UniMarket, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "AnhTinDangs",
+        "Type": "System.Collections.Generic.ICollection\u00601[[UniMarket.Models.AnhTinDang, UniMarket, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -613,6 +868,38 @@
         "Name": "canNegotiate",
         "Type": "System.Boolean",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniMarket.Controllers.TinDangController",
+    "Method": "GetPostAndSimilarPosts",
+    "RelativePath": "api/TinDang/get-post-and-similar/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniMarket.Controllers.TinDangController",
+    "Method": "GetPostById",
+    "RelativePath": "api/TinDang/get-post/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
